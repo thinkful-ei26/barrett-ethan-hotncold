@@ -1,20 +1,17 @@
 import React from 'react';
 
 import Title from './title';
-import Game from './game';
+import Game from './game-components/game';
 import What from './what';
-import newGame from './newGame';
+import NewGame from './newGame';
 
 export default function GameParent() {
-    return (
-        <div>
-            <div>
-                <Title />
-            </div>
-
-            {/* <div>
-                <Game />
-            </div> */}
-        </div>
+    return ( 
+			<div>
+				<Title />
+				<What />
+				<Game />
+				<NewGame />
+			</div>      
     )
 }
